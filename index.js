@@ -39,10 +39,11 @@ const insertTo = () => {
 };
 
 server.listen(port, () => {
+  // First call writeTo() to initalize file then call readFrom(cb) or insertTo() accordingly.
   // writeTo();
   //   readFrom(data => {
   //     console.log(data);
   //   });
-  insertTo();
+  // insertTo();
   console.log("We are live on " + port);
 });
